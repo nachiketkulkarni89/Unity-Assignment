@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 
 var inventoryStyle : GUIStyle;
@@ -16,7 +16,7 @@ Finally, add an propriate GUI label at the bottom.
 
 
 public var inventory = new Dictionary.<String,int>();
-inventory["sword"] = 1;
+inventory["Ball"] = 1;
 inventory["axe"] = 0;
 inventory["bow"] = 0;
 inventory["knife"] = 0;
@@ -52,7 +52,7 @@ if((isPaused == false) && (player.pHealth > 0)) {
 	GUI.Label(Rect(35, 340, 120, 120), "Inventory");
 
 
-	GUI.Label(Rect(35, 370, 120, 120), "Swords: " + inventory["sword"].ToString());
+	GUI.Label(Rect(35, 370, 120, 120), "Ball: " + inventory["Ball"].ToString());
 	GUI.Label(Rect(35, 400, 120, 120), "Bows: " + inventory["bow"].ToString());
 	GUI.Label(Rect(35, 430, 120, 120), "Axes: " + inventory["axe"].ToString());
 	GUI.Label(Rect(35, 460, 120, 120), "Knives: " + inventory["knife"].ToString());
